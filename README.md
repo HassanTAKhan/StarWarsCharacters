@@ -19,28 +19,14 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `Approach taken & comments`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was rapidly built within the space of around 3 hours. If this was a large scale project, then each and every feature would have been built individually and tested properly. For example the hook that was created to fetch the characters would have been one story and pointed and executed accordingly. The Modal may have been another small story. In fact the creation and setup of the project may have been another story. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I decided to go for tailwind css, because that is something that I have been actively trying to learn in my spare time and I have found that it is rapid to use and also because it has predefined breakpoints to accomodate for screen size. In the time that I had available to me, I felt this was the best option
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I used react testing library for testing because I find it is the simplest way to test react components and also because the other popular alternative, enzyme, is now deprecated. 
 
-### `yarn eject`
+I decided against any heavy state management because this is a simple application with a few components so something like redux would not have been appropriate.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+There could have been a few improvements I could have made but I just ran out of time. For example the use of react hooks would mean that I didnt need to prop drill, I could have referenced the hook in the component instead. Also, I did not test a few components which should have been tested because of time constraints.
